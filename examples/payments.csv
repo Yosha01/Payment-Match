@@ -1,0 +1,8 @@
+transaction_id,payer,amount,currency,paid_date,reference
+TXN-001,Northstar Studio,1200.00,PLN,2026-01-07,Payment for INV-2026-001
+TXN-002,Oak & Co,800.00,PLN,2026-01-15,INV-2026-002 partial payment
+TXN-003,Harbor Design,400.00,PLN,2026-01-18,Service payment
+TXN-004,Fieldwork Ltd,400.00,PLN,2026-01-19,Invoice settlement
+TXN-005,Unlisted Client,140.00,PLN,2026-01-20,Consulting
+TXN-006,Oak & Co,50.00,PLN,2026-01-21,INV-2026-002 final payment
+

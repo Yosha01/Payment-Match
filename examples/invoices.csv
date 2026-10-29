@@ -1,0 +1,7 @@
+invoice_number,customer,amount,currency,issued_date
+INV-2026-001,Northstar Studio,1200.00,PLN,2026-01-04
+INV-2026-002,Oak & Co,850.00,PLN,2026-01-10
+INV-2026-003,Harbor Design,400.00,PLN,2026-01-12
+INV-2026-004,Fieldwork Ltd,400.00,PLN,2026-01-15
+INV-2026-005,Common Ground,675.00,PLN,2026-01-18
+
