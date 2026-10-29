@@ -9,6 +9,10 @@ depends_on = None
 
 
 def upgrade():
+    # Alembic creates version_num as VARCHAR(32); this revision ID is longer.
+    # SQLite does not enforce VARCHAR lengths, but PostgreSQL does.
+    if op.get_bind().dialect.name == "postgresql":
+        op.alter_column("alembic_version", "version_num", existing_type=sa.String(32), type_=sa.String(64), existing_nullable=False)
     if op.get_bind().dialect.name == "sqlite":
         with op.batch_alter_table("matches", naming_convention={"uq": "uq_%(table_name)s_%(column_0_name)s"}) as batch:
             batch.drop_constraint("uq_matches_invoice_id", type_="unique")
